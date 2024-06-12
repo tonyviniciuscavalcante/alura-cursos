@@ -16,7 +16,12 @@ if (numero >= 0){
 
 // Crie um sistema de pontuação para um jogo. Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!". 
 // Caso contrário, mostre "Tente novamente para ganhar.".
-
+let pontuacao = prompt('Qual a sua pontuação no jogo?');
+if (pontuacao >= 100) {
+    alert('Parabéns, vocÊ venceu!')
+} else {
+    alert('Tente novamente para ganhar.')
+}
 
 // Crie uma mensagem que informa o usuário sobre o saldo da conta, usando uma template string para incluir o valor do saldo.
 let nome = prompt('Digite seu nome');
