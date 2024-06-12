@@ -8,17 +8,24 @@ function calculaMassaCorporal (altura, peso) {
 calculaMassaCorporal(1.68, 110);
 
 // Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
-function calculaFatorial(num) {
-    while (num > 0) {
-        console.log(num);
-        num--;
+function fatorialValor(num) {
+    if (num === 0 || num === 1)
+      console.log(num);
+    for (var i = num - 1; i >= 1; i--) {
+      num *= i;
     }
-}
+    console.log(num);
+  }
 
-calculaFatorial(5);
+fatorialValor(5);
 
 // Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$4,80.
+function converterDolarReal(dolares) {
+    let reais = dolares * 4.8;
+    console.log(`O valor de 5 dólares convertido em reais é ${reais}`);
+}
 
+converterDolarReal(6);
 
 // Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
 
