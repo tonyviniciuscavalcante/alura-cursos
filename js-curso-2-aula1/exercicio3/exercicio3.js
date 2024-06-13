@@ -28,9 +28,34 @@ function converterDolarReal(dolares) {
 converterDolarReal(6);
 
 // Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
+function retanguloAreaPerimetro(altura, largura) {
+    let area = altura * largura;
+    console.log(`A área do retângulo é: ${area}`);
+    let perimetro = 2 * (altura + largura);
+    console.log(`O perímetro do retângulo é: ${perimetro}`);
+}
 
+retanguloAreaPerimetro(5,5);
 
 // Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
+function ciruculoAreaPerimetro(raio) {
+    let pi = 3.14;
+    let area = pi * (raio * raio);
+    console.log(`A área do circulo é: ${area}`);
+    let perimetro = 2 * pi * raio;
+    console.log(`O perímetro do circulo é: ${perimetro}`);
+}
 
+ciruculoAreaPerimetro(5);
 
 // Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+function tabuada(num) {
+    let contador = 1;
+    while (contador <= 10) {
+        let resultado = num * contador;
+        console.log(`${num} X ${contador} é igual a: ${resultado}`);
+        contador++;
+    }
+}
+
+tabuada(9);
