@@ -2,6 +2,16 @@ let amigos = [];
 
 function adicionar() {
     let amigo = document.getElementById('nome-amigo');
+    if (amigo.value == '') {
+        alert('Informe o nome do amigo');
+        return;
+    }
+
+    if (amigos.includes(amigo.value)) {
+        alert('Nome ja adicionado!');
+        return;
+    }
+    
     let lista = document.getElementById('lista-amigos');
 
     amigos.push(amigo.value);
@@ -19,6 +29,11 @@ function adicionar() {
 }
 
 function sortear() {
+    if (amigos.length < 4) {
+        alert('Adicione pelo menos 4 amigos');
+        return;
+    }
+
     embaralhar(amigos);
     let sorteio = document.getElementById('lista-sorteio');
 
@@ -75,7 +90,7 @@ function reiniciar() {
     document.getElementById('lista-sorteio').innerHTML = '';
 }
 
-
+/*
 // Adicione os números 1,2,3 em uma variável chamada minhaLista e armazene os números 4, 5 e 6 separadamente em outra variável. 
 // Use o método concat() para combinar as sequências de valores em uma nova lista chamadanovaLista. Imprima novaLista no console.
 // Declarando uma variável do tipo array
@@ -124,4 +139,4 @@ function removerDuplicatas(array) {
   // Testando a função com novaLista
   let novaListaSemDuplicatas = removerDuplicatas(novaLista);
   console.log("Remover duplicatas:", novaListaSemDuplicatas);
-  
+*/
