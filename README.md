@@ -1,4 +1,4 @@
-A partir do zero: iniciante em programação
+# A partir do zero: iniciante em programação
 
 Curso 1 - Lógica de programação: mergulhe em programação com JavaScript
 
